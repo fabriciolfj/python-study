@@ -1,0 +1,53 @@
+// mockserver-config.json
+[
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/api/serasa/v1/.*"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "monthlyIncome": 4500.00,
+        "currentDebtRatio": 15.5,
+        "creditScore": 720,
+        "defaultHistory": {
+          "hasRecentDefault": false,
+          "defaultCount": 0,
+          "maxDelayDays": 0,
+          "hasActiveRestrictions": false
+        }
+      }
+    }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/api/boavista/v1/.*"
+    },
+    "httpResponse": {
+      "statusCode": 200,
+      "headers": {
+        "Content-Type": [
+          "application/json"
+        ]
+      },
+      "body": {
+        "monthlyIncome": 4500.00,
+        "currentDebtRatio": 15.5,
+        "creditScore": 720,
+        "defaultHistory": {
+          "hasRecentDefault": false,
+          "defaultCount": 0,
+          "maxDelayDays": 0,
+          "hasActiveRestrictions": false
+        }
+      }
+    }
+  }
+]

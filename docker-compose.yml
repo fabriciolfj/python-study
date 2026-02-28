@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  mockserver:
+    image: mockserver/mockserver:latest
+    ports:
+      - "9000:1080"
+    environment:
+      MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializerJson.json
+    volumes:
+      - ./mockserver-config.json:/config/initializerJson.json
