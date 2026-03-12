@@ -1,24 +1,4 @@
-terraform {
-  required_version = ">= 1.6"
-
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
-}
-
-provider "aws" {
-  region = var.aws_region
-
-  # Descomente para usar com LocalStack
-  # access_key                  = "test"
-  # secret_key                  = "test"
-  # endpoints {
-  #   dynamodb = "http://localhost:4566"
-  # }
-}
+d
 
 # -------------------------------------------------------------------
 # Variáveis
