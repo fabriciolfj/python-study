@@ -26,7 +26,7 @@ def inserir_produto(product_id: str, name: str, price: float, store: int, create
                 "produto_id": product_id,
                 "criado_em": create_date,
                 "nome": name,
-                "preco": Decimal(str(price)),
+                "preco": Decimal(str(price)),\
                 "estoque": store,
             }
         )

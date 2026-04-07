@@ -3,7 +3,7 @@ from typing import Optional
 
 
 class Car(BaseModel):
-    id: Optional[int] = None
+    id: Optional[str] = None
     name: str
     price: float
     available: bool = True
